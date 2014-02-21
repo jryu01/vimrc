@@ -32,11 +32,13 @@ Bundle 'ervandew/supertab'
 Bundle 'mattn/zencoding-vim'
 Bundle 'Raimondi/delimitMate'
 "------ snipmate dependencies -------
-Bundle 'honza/snipmate-snippets'
+Bundle 'honza/vim-snippets'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
+"------ omnicomplete for node -------
+Bundle 'myhere/vim-nodejs-complete'
 " OmnicppComplete for c++ completion using omnicomplete
-Bundle "vim-scripts/OmniCppComplete"
+"Bundle 'vim-scripts/OmniCppComplete'
 "-----------------
 " Other Usuful Plugins
 "-----------------
@@ -50,14 +52,12 @@ Bundle 'scrooloose/syntastic'
 "----------------------------------------
 " Syntax or Indent Supports
 "----------------------------------------
-"------- backend ---------
-Bundle '2072/PHP-Indenting-for-VIm'
-Bundle 'tpope/vim-rails'
-Bundle 'lepture/vim-jinja'
-
-"------- frontend ----------
+"Bundle '2072/PHP-Indenting-for-VIm'
+"Bundle 'tpope/vim-rails'
+"Bundle 'lepture/vim-jinja'
+Bundle 'digitaltoad/vim-jade'
 Bundle 'othree/html5.vim'
-Bundle 'pangloss/vim-javascript'
+Bundle 'jelera/vim-javascript-syntax'
 Bundle 'nono/jquery.vim'
 Bundle 'wavded/vim-stylus'
 
@@ -92,7 +92,7 @@ set nu
 set ruler
 
 " Indentation Setup
-set expandtab  
+set noexpandtab  
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -104,7 +104,7 @@ set smartindent
 autocmd FileType php setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
-autocmd FileType coffee,javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
+autocmd FileType coffee,javascript,jade,stylus setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 autocmd FileType html,htmldjango,xhtml,haml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0
 autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
