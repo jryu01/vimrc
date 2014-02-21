@@ -45,7 +45,6 @@ Bundle 'myhere/vim-nodejs-complete'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 
@@ -85,7 +84,7 @@ filetype plugin indent on     " required!
 syntax on
 
 " color scheme
-colorscheme xoria256 
+"colorscheme solarized 
 
 " display line numbers
 set nu
@@ -149,16 +148,8 @@ autocmd FileType *
 
 "------------------------------------------
 
-" Indent Guide
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=grey   ctermbg=232
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=grey ctermbg=233
-let g:indent_guides_guide_size = 1
-
 " Keybindings for Plugin toggle
 nmap <F6> :NERDTreeToggle<cr>
-nmap <F7> :IndentGuidesToggle<cr>
 
 "------------------------------------------------"
 "                  Useful Functions
