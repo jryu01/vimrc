@@ -56,7 +56,7 @@ Bundle 'scrooloose/syntastic'
 "Bundle 'lepture/vim-jinja'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'othree/html5.vim'
-Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
 Bundle 'nono/jquery.vim'
 Bundle 'wavded/vim-stylus'
 
@@ -84,7 +84,7 @@ filetype plugin indent on     " required!
 syntax on
 
 " color scheme
-"colorscheme solarized 
+colorscheme xoria256
 
 " display line numbers
 set nu
