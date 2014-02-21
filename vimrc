@@ -35,8 +35,8 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'honza/vim-snippets'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
-"------ omnicomplete for node -------
-Bundle 'myhere/vim-nodejs-complete'
+"------ auto complete for node -------
+"Bundle 'marijnh/tern_for_vim' "npm install in the tern_for_vim folder needed 
 " OmnicppComplete for c++ completion using omnicomplete
 "Bundle 'vim-scripts/OmniCppComplete'
 "-----------------
@@ -126,7 +126,13 @@ set completeopt=menu,menuone,longest
 set pumheight=15
 " Omni Completion Setup.
 " set omnifunc for all languages supported by syntax highlighting
-set ofu=syntaxcomplete#Complete
+"set ofu=syntaxcomplete#Complete
+
+"Key mapping
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 "------------------------------------------------"
 "           Plugin Settings
