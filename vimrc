@@ -27,16 +27,16 @@ Bundle 'gmarik/vundle'
 "------------------
 " Code Completions Plugins
 "------------------
-Bundle 'garbas/vim-snipmate'
 Bundle 'ervandew/supertab'
-Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
+Bundle 'garbas/vim-snipmate'
 "------ snipmate dependencies -------
 Bundle 'honza/vim-snippets'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 "------ auto complete for node -------
-"Bundle 'marijnh/tern_for_vim' "npm install in the tern_for_vim folder needed 
+Bundle 'marijnh/tern_for_vim' "npm install in the tern_for_vim folder needed 
 " OmnicppComplete for c++ completion using omnicomplete
 "Bundle 'vim-scripts/OmniCppComplete'
 "-----------------
@@ -89,6 +89,8 @@ colorscheme xoria256
 " display line numbers
 set nu
 set ruler
+" set color column
+set cc=81
 
 " Indentation Setup
 set noexpandtab  
@@ -128,7 +130,7 @@ set pumheight=15
 " set omnifunc for all languages supported by syntax highlighting
 "set ofu=syntaxcomplete#Complete
 
-"Key mapping
+"Key mappings for panel navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -156,6 +158,7 @@ autocmd FileType *
 
 " Keybindings for Plugin toggle
 nmap <F6> :NERDTreeToggle<cr>
+nmap <F7> :SyntasticReset<cr>
 
 "------------------------------------------------"
 "                  Useful Functions
