@@ -36,7 +36,8 @@ Bundle 'honza/vim-snippets'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 "------ auto complete for node -------
-Bundle 'marijnh/tern_for_vim' "npm install in the tern_for_vim folder needed 
+"npm install in the tern_for_vim folder needed 
+Bundle 'marijnh/tern_for_vim' 
 " OmnicppComplete for c++ completion using omnicomplete
 "Bundle 'vim-scripts/OmniCppComplete'
 "-----------------
